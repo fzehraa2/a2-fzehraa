@@ -7,8 +7,8 @@ def create_hash(password):
     pw_bytestring = password.encode()
     return sha256(pw_bytestring).hexdigest()
 
-pas = "hidden"
-hsh1 = create_hash(pas)
+pasw = "hidden"
+hsh1 = create_hash(pasw)
 list = []
 while True:
     print("enter a comment")

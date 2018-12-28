@@ -8,7 +8,7 @@
 from bottle import route, run, default_app, debug, static_file, request
 from hashlib import sha256
 
-@route('static/<filename>')
+@route('/static')
 def static_file_callback(filename):
     return static_file(filename, root="static")
 
